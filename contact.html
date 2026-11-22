@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Rajan Bhandary</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+</head>
+<body>
+  <div class="bg-animation"></div>
+  
+  <div class="flying-elements">
+    <div class="plane"><svg viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg></div>
+    <div class="plane"><svg viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg></div>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="logo">Rajan<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="section" style="padding-top: 140px;">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="tag">Get In Touch</span>
+        <h2>Let's Work Together</h2>
+        <p>Have a project in mind or just want to say hi? Feel free to reach out. I'm always open to new opportunities.</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info fade-in">
+          <h3>Contact Information</h3>
+          <p>Prefer a quick chat? Just hit the WhatsApp button or call me directly. I'm usually available and respond fast.</p>
+
+          <div class="contact-cards">
+            <a href="tel:+919708964917" class="contact-card">
+              <div class="icon-box">📞</div>
+              <div class="details">
+                <h4>Phone</h4>
+                <p>+91 97089 64917</p>
+              </div>
+            </a>
+
+            <a href="https://wa.me/919708964917" target="_blank" class="contact-card">
+              <div class="icon-box">💬</div>
+              <div class="details">
+                <h4>WhatsApp</h4>
+                <p>+91 97089 64917</p>
+              </div>
+            </a>
+
+            <a href="mailto:rajanbhandary@example.com" class="contact-card">
+              <div class="icon-box">✉️</div>
+              <div class="details">
+                <h4>Email</h4>
+                <p>Available on request</p>
+              </div>
+            </a>
+
+            <div class="contact-card" style="cursor: default;">
+              <div class="icon-box">📍</div>
+              <div class="details">
+                <h4>Location</h4>
+                <p>India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form fade-in">
+          <form id="contactForm" onsubmit="return handleSubmit(event)">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project or just say hello..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <a href="https://wa.me/919708964917" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32"><path d="M16.004 0C7.168 0 0 7.168 0 16c0 2.824.736 5.472 2.024 7.776L.064 32l8.4-2.208A15.92 15.92 0 0016.004 32C24.832 32 32 24.832 32 16S24.832 0 16.004 0zm0 29.12c-2.56 0-5.056-.672-7.232-1.952l-.528-.312-5.472 1.44 1.44-5.344-.344-.544A13.056 13.056 0 012.88 16c0-7.232 5.888-13.12 13.124-13.12S29.12 8.768 29.12 16 23.232 29.12 16.004 29.12z"/><path d="M23.36 19.424c-.384-.192-2.272-1.12-2.624-1.248-.352-.128-.608-.192-.864.192-.256.384-.992 1.248-1.216 1.504-.224.256-.448.288-.832.096-.384-.192-1.616-.592-3.072-1.888-1.136-1.024-1.904-2.288-2.128-2.672-.224-.384-.024-.592.168-.784.176-.176.384-.448.576-.672.192-.224.256-.384.384-.64.128-.256.064-.48-.032-.672-.096-.192-.864-2.08-1.184-2.848-.32-.752-.64-.64-.864-.64h-.736c-.256 0-.672.096-1.024.48-.352.384-1.344 1.312-1.344 3.2s1.376 3.712 1.568 3.968c.192.256 2.704 4.128 6.56 5.792.912.384 1.632.624 2.192.8.912.288 1.744.248 2.4.152.736-.112 2.272-.928 2.592-1.824.32-.896.32-1.664.224-1.824-.096-.16-.352-.256-.736-.448z"/></svg>
+  </a>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Rajan Bhandary. Crafted with ❤️ & modern code.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
